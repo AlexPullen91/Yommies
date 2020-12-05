@@ -51,7 +51,6 @@ Create a responsive web app with the django framework where users can build thei
 
 ## Design Choices
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sniglet&display=swap');
 * Brand and headings font - [Sniglet](https://fonts.google.com/specimen/Sniglet?query=sniglet#about)
 * All other fonts [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto#about)
 * Kawaii star flat style icons from [flaticons](https://www.flaticon.com/packs/sweets-4?word=sweets&k=1606073810222)
