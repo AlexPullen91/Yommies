@@ -1,18 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Cabin+Sketch:wght@400;700&display=swap');
 
 body {
+    background-color: #ffeece;
+    color: #4d4c7d;
     font-family: 'Roboto'
 }
 
-.sniglet-header {
-    font-family: 'Sniglet'
+.cabinsketch-header {
+    font-family: 'Cabin Sketch'
 }
 
 .landing-page {
     padding: 10% 15%;
+    height: 100vh;
 }
 
-/*  Bootstrap navbar colors initiallly generated from TWBSColor https://work.smarchal.com/twbscolor/ 
+.build-btn {
+    background-color: #e5b4ff;
+    color: #fff;
+}
+
+.build-btn:hover {
+    color: #fff;
+    transform: scale(1.12);
+}
+
+/*  
+    Bootstrap navbar colors initiallly generated from TWBSColor https://work.smarchal.com/twbscolor/ 
     then further customized
 */
 

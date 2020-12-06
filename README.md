@@ -51,7 +51,7 @@ Create a responsive web app with the django framework where users can build thei
 
 ## Design Choices
 
-* Brand and headings font - [Sniglet](https://fonts.google.com/specimen/Sniglet?query=sniglet#about)
+* Brand and headings font - [Cabin Sketch](https://fonts.google.com/specimen/Cabin+Sketch?category=Display&preview.text=Yommies&preview.text_type=custom#about)
 * All other fonts [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto#about)
 * Kawaii star flat style icons from [flaticons](https://www.flaticon.com/packs/sweets-4?word=sweets&k=1606073810222)
 * Soft pastel colours to compliment the kawaii icons and sweet theme
