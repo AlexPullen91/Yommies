@@ -6,6 +6,10 @@ body {
     font-family: 'Roboto'
 }
 
+.big-font {
+    font-size: 5rem;
+}
+
 .cabinsketch-header {
     font-family: 'Cabin Sketch'
 }
@@ -23,6 +27,11 @@ body {
 .build-btn:hover {
     color: #fff;
     transform: scale(1.12);
+}
+
+.img-medium {
+    height: auto;
+    width: 50%;
 }
 
 /*  
