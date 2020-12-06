@@ -6,8 +6,18 @@ body {
     font-family: 'Comfortaa', cursive;
 }
 
+.medium-font {
+    font-size: 3.5rem;
+}
+
 .big-font {
     font-size: 5rem;
+}
+
+@media (max-width: 440px) {
+    .big-font {
+        font-size: 3.5rem;
+    }
 }
 
 .cabinsketch-header {
