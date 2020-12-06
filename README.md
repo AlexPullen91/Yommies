@@ -52,7 +52,7 @@ Create a responsive web app with the django framework where users can build thei
 ## Design Choices
 
 * Brand and headings font - [Cabin Sketch](https://fonts.google.com/specimen/Cabin+Sketch?category=Display&preview.text=Yommies&preview.text_type=custom#about)
-* All other fonts [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto#about)
+* All other fonts [Comfortaa](https://fonts.google.com/specimen/Comfortaa?category=Display&preview.text=Yommies&preview.text_type=custom&selection.family=Comfortaa:wght@300;400;500;600;700#about) and [Roboto](https://fonts.google.com/specimen/Roboto?query=roboto#about)
 * Kawaii star flat style icons from [flaticons](https://www.flaticon.com/packs/sweets-4?word=sweets&k=1606073810222)
 * Soft pastel colours to compliment the kawaii icons and sweet theme
     * #F4FFB4 - lemon yellow crayon
@@ -60,10 +60,13 @@ Create a responsive web app with the django framework where users can build thei
     * #FFE5B4 - peach
     * #FFC0B4 - melon
     * #E5B4FF - mauve
+    * #4D4C7D - purple navy
     * #C0B4FF - maximum blue purple
     * #B4CEFF - baby blue eyes
+    * #EBF1FF - magnolia
     * #B4F4FF - blizzard blue
     * #B4FFE5 - aero blue
+    * #FFFFFF - white
 
 ---
 

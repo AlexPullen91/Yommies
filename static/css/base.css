@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Cabin+Sketch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Comfortaa:wght@300;400;500;600;700&family=Roboto:wght@100;300;400&display=swap');
 
 body {
-    background-color: #ffeece;
+    background-color: #EBF1FF;
     color: #4d4c7d;
-    font-family: 'Roboto'
+    font-family: 'Comfortaa', cursive;
 }
 
 .big-font {
@@ -11,12 +11,27 @@ body {
 }
 
 .cabinsketch-header {
-    font-family: 'Cabin Sketch'
+    font-family: 'Cabin Sketch', cursive;
 }
 
-.landing-page {
-    padding: 10% 15%;
+.view-height-100 {
     height: 100vh;
+}
+
+.container-padding {
+    padding: 10% 15%;
+}
+
+.bg-color-purple {
+    background-color: #c0b4ff;
+}
+
+.bg-color-almond {
+    background-color: #FFEECE;
+}
+
+.bg-color-lightblue {
+    background-color: #EBF1FF;
 }
 
 .build-btn {
@@ -27,6 +42,11 @@ body {
 .build-btn:hover {
     color: #fff;
     transform: scale(1.12);
+}
+
+.img-small {
+    height: auto;
+    width: 25%;
 }
 
 .img-medium {
