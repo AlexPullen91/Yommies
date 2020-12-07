@@ -35,57 +35,7 @@
   </head>
   <body>
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand cabinsketch-header" href="#">Yommies</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars drop-down-menu"></i>
-            </button>
-
-            <div class="collapse navbar-collapse font-weight-light" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Sweets
-                        </a>
-                        <div class="dropdown-menu font-weight-light" aria-labelledby="navbarDropdown1">
-                            <a class="dropdown-item" href="#">Build</a>
-                            <a class="dropdown-item" href="#">Bags</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="#">
-                            <div class="text-center-lg">
-                                <i class="fas fa-shopping-bag fa-lg"></i>
-                                <p class="d-inline">
-                                    {% if grand_total %}
-                                        £{{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        £0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user fa-lg"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown2">
-                            {% if request.user.is_authenticated %}
-                                {% if request.user.is_superuser %}
-                                        <a class="dropdown-item" href="#">Product Management</a>
-                                {% endif %}
-                                <a class="dropdown-item" href="#">My Profile</a>
-                                <a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a>
-                            {% else %}
-                                <a class="dropdown-item" href="{% url 'account_signup' %}">Register</a>
-                                <a class="dropdown-item" href="{% url 'account_login' %}">Login</a>
-                            {% endif %}
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        {% include 'includes/navbar.html' %}
     </header>
 
     {% if messages %}
@@ -103,36 +53,7 @@
     {% endblock %}
 
     <footer>
-        <div class="container-fluid footer-padding bg-color-purplenavy">
-            <div class="row">
-                <div class="col-4 text-center footer-link-positioning">
-                    <h3 class="footer-headers mb-3">Footer Links</h3>
-                    <a href="#" class="m-auto py-1 footer-links-style">some links</a>
-                    <a href="#" class="m-auto py-1 footer-links-style">some links</a>
-                    <a href="#" class="m-auto py-1 footer-links-style">some links</a>
-                    <a href="#" class="m-auto py-1 footer-links-style">some links</a>
-                </div>
-                <div class="col-4 text-center footer-link-positioning">
-                    <h3 class="footer-headers mb-3">Footer Links</h3>
-                    <a href="#" class="m-auto py-1 footer-links-style">some links</a>
-                    <a href="#" class="m-auto py-1 footer-links-style">some links</a>
-                    <a href="#" class="m-auto py-1 footer-links-style">some links</a>
-                    <a href="#" class="m-auto py-1 footer-links-style">some links</a>
-                </div>
-                <div class="col-4 text-center">
-                    <h3 class="footer-headers mb-3">Social</h3>
-                    <a href="#" class="p-1"><i class="fab fa-facebook-square social-icons"></i></a>
-                    <a href="#" class="p-1"><i class="fab fa-twitter-square social-icons"></i></a>
-                    <a href="#" class="p-1"><i class="fab fa-instagram-square social-icons"></i></a>
-                    <a href="#" class="p-1"><i class="fab fa-pinterest-square social-icons"></i></a>
-                </div>
-            </div>
-            <div class="ro">
-                <div class="col-12 text-center">
-                    <p class="small-font text-white pt-5">This site is intended for educational purposes only.</p>
-                </div>
-            </div>
-        </div>
+        {% include 'includes/footer.html' %}
     </footer>
   </body>
 </html>
