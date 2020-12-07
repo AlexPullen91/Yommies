@@ -11,6 +11,9 @@ class Scoops(models.Model):
     def __str__(self):
         return self.name
 
+    class Meta:
+        verbose_name_plural = "Scoops"
+
 
 class Bags(models.Model):
     name = models.CharField(max_length=254)
@@ -23,3 +26,6 @@ class Bags(models.Model):
 
     def __str__(self):
         return self.name
+
+    class Meta:
+        verbose_name_plural = "Bags"
