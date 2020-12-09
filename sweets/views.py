@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Scoops
+from .models import Scoops, Bags
 
 
 def all_scoops(request):
@@ -11,4 +11,16 @@ def all_scoops(request):
         'scoops': scoops,
     }
 
-    return render(request, 'scoops/scoops.html', context)
+    return render(request, 'sweets/scoops.html', context)
+
+
+def all_bags(request):
+    """ A view to show bags page """
+
+    bags = Bags.objects.all()
+
+    context = {
+        'bags': bags,
+    }
+
+    return render(request, 'sweets/bags.html', context)

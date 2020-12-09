@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <div class="container-fluid container-padding">
+        <div class="row">
+            <div class="col-12 pt-5">
+                <h1 class="text-center pb-5">Yommies 1KG Premade Mix</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 text-center pb-4">
+                <img class="img-big border-radius-curve" src="{% static 'images/yommiesbag.jpg' %}" alt="Bag of yommies pick 'n' mix">
+            </div>
+            <div class="col-md-6">
+                <form>
+                    <div class="form-group">
+                        <div class="d-flex">
+                            <select class="form-control form-control-lg" name="scoop1" required>
+                                <option value="">Choose your bag</option>
+                                {% for bag in bags %}
+                                    <option value="{{ bag.name }}">{{ bag.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group py-3">
+                        <label for="quantity" class="d-inline">Quantity</label>
+                        <input class="d-inline form-control w-25" type="number" name="quantity" min="1" max="99" placeholder="1">
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-sm-2 my-">Add to cart</button>
+                    <button type="submit" class="btn btn-warning mx-sm-2 my-1">Checkout</button>
+                    <div class="d-inline mx-sm-2 pt-1"><i class="fab fa-cc-stripe stripe-icon"></i></div>
+                    <small class="text-center d-block pt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam amet fugiat nam, harum soluta eveniet voluptatibus omnis quas mollitia eaque blanditiis quasi! Nostrum repellat quia iusto tempora neque amet ex.</small>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
