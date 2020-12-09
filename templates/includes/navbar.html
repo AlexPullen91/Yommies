@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand cabinsketch-header" href="#">Yommies</a>
+    <a class="navbar-brand cabinsketch-header" href="{% url 'home' %}">Yommies</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars drop-down-menu"></i>
     </button>
@@ -11,7 +11,7 @@
                     Sweets
                 </a>
                 <div class="dropdown-menu font-weight-light" aria-labelledby="navbarDropdown1">
-                    <a class="dropdown-item" href="#">Build</a>
+                    <a class="dropdown-item" href="{% url 'scoops' %}">Build</a>
                     <a class="dropdown-item" href="#">Bags</a>
                 </div>
             </li>
