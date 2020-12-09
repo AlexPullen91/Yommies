@@ -147,6 +147,7 @@ You can find my wireframes [here](https://github.com/AlexPullen91/yommies/tree/m
 
 ## Credits
 
+* Favicon from [favicon generator](https://www.favicon.cc/?)
 
 ### Content
 
