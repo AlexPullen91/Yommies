@@ -18,6 +18,11 @@ body {
     font-family: 'Cabin Sketch', cursive;
 }
 
+.stripe-icon {
+    font-size: 2.6rem;
+    vertical-align: bottom;
+}
+
 /* Buttons */
 
 .pink-btn {
@@ -99,6 +104,11 @@ body {
 }
 
 /* Images */
+
+.sweet-select-img {
+    height: 45px;
+    width: 45px;
+}
 
 .img-small {
     height: auto;
