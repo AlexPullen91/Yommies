@@ -1,6 +1,14 @@
 from django.shortcuts import render
+from .models import Card
 
 
 def index(request):
     """ A view to return the index page """
-    return render(request, 'home/index.html')
+
+    card = Card.objects.all()
+
+    context = {
+        'card': card,
+    }
+
+    return render(request, 'home/index.html', context)
