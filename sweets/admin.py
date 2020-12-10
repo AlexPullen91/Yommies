@@ -24,7 +24,7 @@ class BagsAdmin(admin.ModelAdmin):
 class StickersAdmin(admin.ModelAdmin):
     list_display = (
         'name',
-        'theme',
+        'category',
         'price',
     )
 
