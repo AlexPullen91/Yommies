@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Scoops, Bags, Stickers
+from .models import Category, Scoops, Bags, Stickers
 
 # Register your models here.
 
@@ -29,6 +29,7 @@ class StickersAdmin(admin.ModelAdmin):
     )
 
 
+admin.site.register(Category)
 admin.site.register(Scoops, ScoopsAdmin)
 admin.site.register(Bags, BagsAdmin)
 admin.site.register(Stickers, StickersAdmin)

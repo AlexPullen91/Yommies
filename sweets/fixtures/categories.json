@@ -1,0 +1,72 @@
+[
+    {
+        "pk": 1,
+        "model": "sweets.category",
+        "fields": {
+            "name": "FIZZY"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "sweets.category",
+        "fields": {
+            "name": "JELLY"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "sweets.category",
+        "fields": {
+            "name": "CHOCOLATE"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "sweets.category",
+        "fields": {
+            "name": "VEGETARIAN"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "sweets.category",
+        "fields": {
+            "name": "RANDOM"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "sweets.category",
+        "fields": {
+            "name": "PINK"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "sweets.category",
+        "fields": {
+            "name": "CANDY"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "sweets.category",
+        "fields": {
+            "name": "LOLLIPOPS"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "sweets.category",
+        "fields": {
+            "name": "GRUMPY"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "sweets.category",
+        "fields": {
+            "name": "HAPPY"
+        }
+    }
+]
