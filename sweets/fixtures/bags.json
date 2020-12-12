@@ -1,0 +1,72 @@
+[
+    {
+        "pk": 1,
+        "model": "sweets.bags",
+        "fields": {
+            "name": "FIZZY YOMS",
+            "category": 1,
+            "description": "FIZZY ONLY PICK N MIX SELECTION",
+            "is_vegetarian": "False",
+            "price": 11.00,
+            "weight": "1KG",
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 2,
+        "model": "sweets.bags",
+        "fields": {
+            "name": "JELLY YOMS",
+            "category": 2,
+            "description": "JELLY ONLY PICK N MIX SELECTION",
+            "is_vegetarian": "False",
+            "price": 11.00,
+            "weight": "1KG",
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 3,
+        "model": "sweets.bags",
+        "fields": {
+            "name": "CHOCCIE YOMS",
+            "category": 3,
+            "description": "CHOCOLATE ONLY PICK N MIX SELECTION",
+            "is_vegetarian": "False",
+            "price": 11.00,
+            "weight": "1KG",
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 4,
+        "model": "sweets.bags",
+        "fields": {
+            "name": "VEGETARIAN YOMS",
+            "category": 4,
+            "description": "VEGETARIAN ONLY PICK N MIX SELECTION",
+            "is_vegetarian": "True",
+            "price": 11.00,
+            "weight": "1KG",
+            "image_url": "",
+            "image": ""
+        }
+    },
+    {
+        "pk": 5,
+        "model": "sweets.bags",
+        "fields": {
+            "name": "RANDOM YOMS",
+            "category": 5,
+            "description": "RANDOM PICK N MIX SELECTION",
+            "is_vegetarian": "False",
+            "price": 11.00,
+            "weight": "1KG",
+            "image_url": "",
+            "image": ""
+        }
+    }
+]
