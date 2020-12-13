@@ -1,0 +1,585 @@
+[
+    {
+        "pk": 1,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FIZZY CHERRY COLA BOTTLES (V)",
+            "category": 1,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "FIZZY_CHERRY_COLA_BOTTLES_V.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "GIANT STRAWBS (V)",
+            "category": 2,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "GIANT_STRAWBS_V.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "VANILLA FUDGE (V)",
+            "category": 3,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "VANILLA_FUDGE_V.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "MILK CHOCOLATE RAISINS",
+            "category": 3,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "MILK_CHOCOLATE_RAISINS.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FLYING SAUCERS (V)",
+            "category": 1,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "FLYING_SAUCERS_V.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "WHITE MICE (V)",
+            "category": 3,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "WHITE_MICE_V.jpg"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "JELLY BEANS (V)",
+            "category": 2,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "JELLY_BEANS_V.jpg"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "SHERBET LEMONS (V)",
+            "category": 1,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "SHERBET_LEMONS_V.jpg"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "HEART THROBS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "HEART_THROBS.jpg"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "GUMMY BEARS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "GUMMY_BEARS.jpg"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "COCONUT MUSHROOMS",
+            "category": 3,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "COCONUT_MUSHROOMS.jpg"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "CHOCOLATE MINI EGGS",
+            "category": 3,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "CHOCOLATE_MINI_EGGS.jpg"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "SOUR STRAWBERRY PENCIL BITES",
+            "category": 1,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "SOUR_STRAWBERRY_PENCIL_BITES.jpg"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "STRAWBERRY MILKSHAKES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "STRAWBERRY_MILKSHAKES.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FRIED EGGS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "FRIED_EGGS.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "WATER MELON SLICES",
+            "category": 1,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "WATER_MELON_SLICES.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FRIENDSHIP RINGS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "FRIENDSHIP_RINGS.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "GIANT DOLPHINS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "GIANT_DOLPHINS.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "STRAWBERRY PENCILS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "STRAWBERRY_PENCILS.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FIZZY COLA BOTTLES",
+            "category": 1,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "FIZZY_COLA_BOTTLES.jpg"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "STRAWBERRY BELTS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "STRAWBERRY_BELTS.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "RED LIPS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "RED_LIPS.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FIZZY BUBBLEGUM BOTTLES",
+            "category": 1,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "FIZZY_BUBBLEGUM_BOTTLES.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "COLA BOTTLES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "COLA_BOTTLES.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "CHERRIES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "CHERRIES.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "BLUE RASPBERRY TWISTERS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "BLUE_RASPBERRY_TWISTERS.jpg"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "STRAWBERRY BONBONS (V)",
+            "category": 2,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "STRAWBERRY_BONBONS_V.jpg"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "BANANAS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "BANANAS.jpg"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "SHRIMPS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "SHRIMPS.jpg"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "GIANT SNAKE",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "GIANT_SNAKE.jpg"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "STRAWBERRY PENCIL BITES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "STRAWBERRY_PENCIL_BITES.jpg"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FIZZY STRAWBERRIES (V)",
+            "category": 1,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "FIZZY_STRAWBERRIES_V.jpg"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "CHOCOLATE FUDGE (V)",
+            "category": 3,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "CHOCOLATE_FUDGE_V.jpg"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "JELLY SNAKES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "JELLY_SNAKES.jpg"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "DRACULA TEETH NON FIZZY (V)",
+            "category": 2,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "DRACULA_TEETH_NON_FIZZY_V.jpg"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "SOUR DUMMIES (V)",
+            "category": 1,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "SOUR_DUMMIES_V.jpg"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "MILK CHOCOLATE JAZZIES (V)",
+            "category": 3,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "MILK_CHOCOLATE_JAZZIES_V.jpg"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "STRAWBERRY MUSHROOMS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "STRAWBERRY_MUSHROOMS.jpg"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "CANDY CONES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "CANDY_CONES.jpg"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FIZZY DRACULA TEETH",
+            "category": 1,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "FIZZY_DRACULA_TEETH.jpg"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "STRAWBERRY CREAM SPINNING TOPS",
+            "category": 3,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "STRAWBERRY_CREAM_SPINNING_TOPS.jpg"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "MILK BOTTLES NON POWDERED",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "MILK_BOTTLES_NON_POWDERED.jpg"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "RHUBARB & CUSTARD BITES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "RHUBARB_CUSTARD_BITES.jpg"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "FIZZY PEACHES",
+            "category": 1,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "FIZZY_PEACHES.jpg"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "JELLY BONES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "JELLY_BONES.jpg"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "GIANT COLA BOTTLES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "GIANT_COLA_BOTTLES.jpg"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "JELLY BABIES",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "JELLY_BABIES.jpg"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "WHITE CHOCOLATE SNOWIE STARS (V)",
+            "category": 3,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "WHITE_CHOCOLATE_SNOWIE_STARS_V.jpg"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "WHITE CHOCOLATE SNOWIES (V)",
+            "category": 3,
+            "is_vegetarian": "True",
+            "image_url": "",
+            "image": "WHITE_CHOCOLATE_SNOWIES_V.jpg"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "MINI TEETH FANGS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "MINI_TEETH_FANGS.jpg"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "NORTH POLE MARSHMELLOWS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "NORTH_POLE_MARSHMALLOWS.jpg"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "PINT POTS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "PINT_POTS.jpg"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "sweets.scoops",
+        "fields": {
+            "name": "JELLY BRAINS",
+            "category": 2,
+            "is_vegetarian": "False",
+            "image_url": "",
+            "image": "JELLY_BRAINS.jpg"
+        }
+    }
+]
