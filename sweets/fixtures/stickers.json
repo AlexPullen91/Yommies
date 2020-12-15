@@ -1,0 +1,74 @@
+[
+    {
+        "pk": 1,
+        "model": "sweets.stickers",
+        "fields": {
+            "name": "CHOCCIE YOMMIES x6",
+            "category": 3,
+            "description": "A collection of chocolate themed yommie stickers",
+            "price": 0.00,
+            "image_url": "",
+            "image": "choccieyommies.jpg"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "sweets.stickers",
+        "fields": {
+            "name": "PINK YOMMIES x6",
+            "category": 6,
+            "description": "A collection of pink yommie stickers",
+            "price": 0.00,
+            "image_url": "",
+            "image": "pinkyommies.jpg"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "sweets.stickers",
+        "fields": {
+            "name": "CANDY YOMMIES x6",
+            "category": 7,
+            "description": "A collection of candy yommie stickers",
+            "price": 0.00,
+            "image_url": "",
+            "image": "candyyommies.jpg"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "sweets.stickers",
+        "fields": {
+            "name": "LOLLIE YOMMIES x6",
+            "category": 8,
+            "description": "A collection of lollipop yommie stickers",
+            "price": 0.00,
+            "image_url": "",
+            "image": "lollieyommies.jpg"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "sweets.stickers",
+        "fields": {
+            "name": "GRUMPY YOMMIES x6",
+            "category": 9,
+            "description": "A collection of grumpy faced yommie stickers",
+            "price": 0.00,
+            "image_url": "",
+            "image": "grumpyommies.jpg"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "sweets.stickers",
+        "fields": {
+            "name": "HAPPY YOMMIES x6",
+            "category": 5,
+            "description": "A collection of happy smiley yommie stickers",
+            "price": 0.00,
+            "image_url": "",
+            "image": "happyommies.jpg"
+        }
+    }
+]

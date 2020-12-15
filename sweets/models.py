@@ -13,7 +13,8 @@ class Category(models.Model):
 
 class Scoops(models.Model):
     name = models.CharField(max_length=254)
-    category = models.OneToOneField(Category, on_delete=models.CASCADE, primary_key=True)
+    # category = models.OneToOneField(Category, on_delete=models.CASCADE, primary_key=True)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     is_vegetarian = models.BooleanField()
     image_url = models.URLField(max_length=1024, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
@@ -27,7 +28,8 @@ class Scoops(models.Model):
 
 class Bags(models.Model):
     name = models.CharField(max_length=254)
-    category = models.OneToOneField(Category, on_delete=models.CASCADE, primary_key=True)
+    # category = models.OneToOneField(Category, on_delete=models.CASCADE, primary_key=True)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     description = models.TextField()
     is_vegetarian = models.BooleanField()
     weight = models.CharField(max_length=254)
@@ -44,7 +46,8 @@ class Bags(models.Model):
 
 class Stickers(models.Model):
     name = models.CharField(max_length=254)
-    category = models.OneToOneField(Category, on_delete=models.CASCADE, primary_key=True)
+    # category = models.OneToOneField(Category, on_delete=models.CASCADE, primary_key=True)
+    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     description = models.TextField()
     price = models.DecimalField(max_digits=6, decimal_places=2)
     image_url = models.URLField(max_length=1024, null=True, blank=True)
