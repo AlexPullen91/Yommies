@@ -20,7 +20,7 @@
                             <select class="form-control form-control-lg" name="bag_choice" id="bagChoice" required>
                                 <option value="">Choose your bag</option>
                                 {% for bag in bags %}
-                                    <option value='{"name":"{{ bag.name }}", "id":"{{ bag.id }}"}' data-item_id="{{ bag.id }}">{{ bag.name }}</option>
+                                    <option value='{"name":"{{ bag.name }}", "id":"{{ bag.id }}", "description":"{{ bag.description }}", "price":"{{ bag.price }}"}' data-item_id="{{ bag.id }}">{{ bag.name }}</option>
                                 {% endfor %}
                             </select>
                         </div>
