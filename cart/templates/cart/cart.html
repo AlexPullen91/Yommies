@@ -4,7 +4,24 @@
 {% block content %}
 
     <div class="container-fluid view-height-100 container-padding text-center mt-5 mt-lg-0">
-        <h1>Your Shopping Cart</h1>
+        <div class="row">
+            <div class="col">  
+                <h1>Your Shopping Cart</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                {% if bag_items %}
+                    <div class="table-responsive">
+                    </div>
+                {% else %}
+                    <p class="mt-5">Your cart is empty!</p>
+                    <p class="my-5">Get building your own pick 'N' mix or choose a ready made bag.</p>
+                    <a href="{% url 'scoops' %}" class="btn btn-lg pink-btn mx-3">Build</a>
+                    <a href="{% url 'bags' %" class="btn btn-lg pink-btn mx-3">Bags</a>
+                {% endif %}
+            </div>
+        </div>
     </div>
 
 {% endblock %}
