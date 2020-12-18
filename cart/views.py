@@ -23,8 +23,8 @@ def add_to_cart(request):
 
     request.session['cart'] = cart
 
-    print(bag_choice)
-    print(item_id)
-    print(request.session['cart'])
+    # print(bag_choice)
+    # print(item_id)
+    # print(request.session['cart'])
 
     return redirect(redirect_url)
