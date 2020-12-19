@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 import json
 
 
@@ -28,3 +28,24 @@ def add_to_cart(request):
     # print(request.session['cart'])
 
     return redirect(redirect_url)
+
+
+def adjust_cart(request, item_id):
+    """ Adjust the quantity of the specified sweet bag """
+
+    quantity = int(request.POST.get('quantity'))
+    cart = request.session.get('cart', {})
+
+    # if item_id in list(cart.keys()):
+    #     cart[item_id] += quantity
+    # else:
+    #     cart[item_id] = quantity
+
+    if quantity > 0:
+        cart[item_id] = quantity
+    else:
+        cart.pop[item_id]
+
+    request.session['cart'] = cart
+
+    return redirect(reverse('view_cart'))
