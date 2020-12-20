@@ -22,11 +22,6 @@ def add_to_cart(request):
         cart[item_id] = quantity
 
     request.session['cart'] = cart
-
-    # print(bag_choice)
-    # print(item_id)
-    # print(request.session['cart'])
-
     return redirect(redirect_url)
 
 
@@ -36,15 +31,10 @@ def adjust_cart(request, item_id):
     quantity = int(request.POST.get('quantity'))
     cart = request.session.get('cart', {})
 
-    # if item_id in list(cart.keys()):
-    #     cart[item_id] += quantity
-    # else:
-    #     cart[item_id] = quantity
-
     if quantity > 0:
         cart[item_id] = quantity
     else:
-        cart.pop[item_id]
+        cart.pop(item_id)
 
     request.session['cart'] = cart
 

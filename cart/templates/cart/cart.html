@@ -38,16 +38,16 @@
                                     <td class="py-3 w-25">
                                         <form class="update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
                                             {% csrf_token %}
-                                            <div class="form-group py-3">
+                                            <div class="pb-3">
                                                 <div class="input-group">
                                                     <div class="input-group-prepend">
-                                                        <button class="decrement-qty btn btn-sm text-purple" data-item_id="1" id="decrement-qty">
+                                                        <button class="decrement-qty btn btn-sm text-purple" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                             <i class="fas fa-minus fa-sm"></i>
                                                         </button>
                                                     </div>
-                                                    <input class="d-inline form-control form-control-sm w-25 qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="2" id="id_qty">
+                                                    <input class="d-inline form-control form-control rounded qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                                     <div class="input-group-append">
-                                                        <button class="increment-qty btn btn-sm text-purple" data-item_id="3" id="increment-qty">
+                                                        <button class="increment-qty btn btn-sm text-purple" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                             <i class="fas fa-plus fa-sm"></i>
                                                         </button>
                                                     </div>
@@ -84,7 +84,7 @@
                     <p class="mt-5">Your cart is empty!</p>
                     <p class="my-5">Get building your own pick 'N' mix or choose a ready made bag.</p>
                     <a href="{% url 'scoops' %}" class="btn btn-lg pink-btn mx-3">Build</a>
-                    <a href="{% url 'bags' %" class="btn btn-lg pink-btn mx-3">Bags</a>
+                    <a href="{% url 'bags' %}" class="btn btn-lg pink-btn mx-3">Bags</a>
                 {% endif %}
             </div>
         </div>
@@ -104,15 +104,15 @@
 
     // Remove item and reload on click
     $('.remove-item').click(function(e) {
-        var csrftoken = "{{ csrf_token }}";
+        var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/cart/remove/${itemId}`;
-        var data = {'csrfmiddlewaretoken': csrftoken};
+        var url = `/cart/remove/${itemId}/`;
+        var data = {'csrfmiddlewaretoken': csrfToken};
 
         $.post(url, data)
-            .done(function() {
-                location.reload();
-        });
+         .done(function() {
+             location.reload();
+         });
     })
 </script>
 {% endblock %}
