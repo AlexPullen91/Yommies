@@ -84,6 +84,14 @@ body {
     background-color: #FFEECE;
 }
 
+.bg-color-peach {
+    background-color: #FFE5B4;
+}
+
+.bg-color-melon {
+    background-color: #ffc0b4;
+}
+
 /* Footer styling */
 
 .footer-padding {
@@ -146,6 +154,15 @@ body {
 
 .border-radius-curve {
     border-radius: 1rem;
+}
+
+/* Bootstrap Toasts */
+
+.message-container {
+    position: fixed;
+    top: 55px;
+    right: 1px;
+    z-index: 9999999999;
 }
 
 /*  

@@ -1,4 +1,5 @@
 from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.contrib import messages
 import json
 
 
@@ -12,6 +13,7 @@ def add_to_cart(request):
 
     quantity = int(request.POST.get('quantity'))
     bag_choice = request.POST.get('bag_choice')
+    bag_name = json.loads(bag_choice)['name']
     item_id = json.loads(bag_choice)['id']
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
@@ -20,6 +22,7 @@ def add_to_cart(request):
         cart[item_id] += quantity
     else:
         cart[item_id] = quantity
+        messages.success(request, f'{bag_name} have been added to your cart!')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
