@@ -6,6 +6,7 @@
             "name": "FIZZY CHERRY COLA BOTTLES (V)",
             "category": 1,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "FIZZY_CHERRY_COLA_BOTTLES_V.jpg"
         }
@@ -17,6 +18,7 @@
             "name": "GIANT STRAWBS (V)",
             "category": 2,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "GIANT_STRAWBS_V.jpg"
         }
@@ -28,6 +30,7 @@
             "name": "VANILLA FUDGE (V)",
             "category": 3,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "VANILLA_FUDGE_V.jpg"
         }
@@ -39,6 +42,7 @@
             "name": "MILK CHOCOLATE RAISINS",
             "category": 3,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "MILK_CHOCOLATE_RAISINS.jpg"
         }
@@ -50,6 +54,7 @@
             "name": "FLYING SAUCERS (V)",
             "category": 1,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "FLYING_SAUCERS_V.jpg"
         }
@@ -61,6 +66,7 @@
             "name": "WHITE MICE (V)",
             "category": 3,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "WHITE_MICE_V.jpg"
         }
@@ -72,6 +78,7 @@
             "name": "JELLY BEANS (V)",
             "category": 2,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "JELLY_BEANS_V.jpg"
         }
@@ -83,6 +90,7 @@
             "name": "SHERBET LEMONS (V)",
             "category": 1,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "SHERBET_LEMONS_V.jpg"
         }
@@ -94,6 +102,7 @@
             "name": "HEART THROBS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "HEART_THROBS.jpg"
         }
@@ -105,6 +114,7 @@
             "name": "GUMMY BEARS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "GUMMY_BEARS.jpg"
         }
@@ -116,6 +126,7 @@
             "name": "COCONUT MUSHROOMS",
             "category": 3,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "COCONUT_MUSHROOMS.jpg"
         }
@@ -127,6 +138,7 @@
             "name": "CHOCOLATE MINI EGGS",
             "category": 3,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "CHOCOLATE_MINI_EGGS.jpg"
         }
@@ -138,6 +150,7 @@
             "name": "SOUR STRAWBERRY PENCIL BITES",
             "category": 1,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "SOUR_STRAWBERRY_PENCIL_BITES.jpg"
         }
@@ -149,6 +162,7 @@
             "name": "STRAWBERRY MILKSHAKES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "STRAWBERRY_MILKSHAKES.jpg"
         }
@@ -160,6 +174,7 @@
             "name": "FRIED EGGS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "FRIED_EGGS.jpg"
         }
@@ -171,6 +186,7 @@
             "name": "WATER MELON SLICES",
             "category": 1,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "WATER_MELON_SLICES.jpg"
         }
@@ -182,6 +198,7 @@
             "name": "FRIENDSHIP RINGS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "FRIENDSHIP_RINGS.jpg"
         }
@@ -193,6 +210,7 @@
             "name": "GIANT DOLPHINS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "GIANT_DOLPHINS.jpg"
         }
@@ -204,6 +222,7 @@
             "name": "STRAWBERRY PENCILS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "STRAWBERRY_PENCILS.jpg"
         }
@@ -215,6 +234,7 @@
             "name": "FIZZY COLA BOTTLES",
             "category": 1,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "FIZZY_COLA_BOTTLES.jpg"
         }
@@ -226,6 +246,7 @@
             "name": "STRAWBERRY BELTS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "STRAWBERRY_BELTS.jpg"
         }
@@ -237,6 +258,7 @@
             "name": "RED LIPS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "RED_LIPS.jpg"
         }
@@ -248,6 +270,7 @@
             "name": "FIZZY BUBBLEGUM BOTTLES",
             "category": 1,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "FIZZY_BUBBLEGUM_BOTTLES.jpg"
         }
@@ -259,6 +282,7 @@
             "name": "COLA BOTTLES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "COLA_BOTTLES.jpg"
         }
@@ -270,6 +294,7 @@
             "name": "CHERRIES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "CHERRIES.jpg"
         }
@@ -281,6 +306,7 @@
             "name": "BLUE RASPBERRY TWISTERS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "BLUE_RASPBERRY_TWISTERS.jpg"
         }
@@ -292,6 +318,7 @@
             "name": "STRAWBERRY BONBONS (V)",
             "category": 2,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "STRAWBERRY_BONBONS_V.jpg"
         }
@@ -303,6 +330,7 @@
             "name": "BANANAS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "BANANAS.jpg"
         }
@@ -314,6 +342,7 @@
             "name": "SHRIMPS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "SHRIMPS.jpg"
         }
@@ -325,6 +354,7 @@
             "name": "GIANT SNAKE",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "GIANT_SNAKE.jpg"
         }
@@ -336,6 +366,7 @@
             "name": "STRAWBERRY PENCIL BITES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "STRAWBERRY_PENCIL_BITES.jpg"
         }
@@ -347,6 +378,7 @@
             "name": "FIZZY STRAWBERRIES (V)",
             "category": 1,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "FIZZY_STRAWBERRIES_V.jpg"
         }
@@ -358,6 +390,7 @@
             "name": "CHOCOLATE FUDGE (V)",
             "category": 3,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "CHOCOLATE_FUDGE_V.jpg"
         }
@@ -369,6 +402,7 @@
             "name": "JELLY SNAKES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "JELLY_SNAKES.jpg"
         }
@@ -380,6 +414,7 @@
             "name": "DRACULA TEETH NON FIZZY (V)",
             "category": 2,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "DRACULA_TEETH_NON_FIZZY_V.jpg"
         }
@@ -391,6 +426,7 @@
             "name": "SOUR DUMMIES (V)",
             "category": 1,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "SOUR_DUMMIES_V.jpg"
         }
@@ -402,6 +438,7 @@
             "name": "MILK CHOCOLATE JAZZIES (V)",
             "category": 3,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "MILK_CHOCOLATE_JAZZIES_V.jpg"
         }
@@ -413,6 +450,7 @@
             "name": "STRAWBERRY MUSHROOMS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "STRAWBERRY_MUSHROOMS.jpg"
         }
@@ -424,6 +462,7 @@
             "name": "CANDY CONES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "CANDY_CONES.jpg"
         }
@@ -435,6 +474,7 @@
             "name": "FIZZY DRACULA TEETH",
             "category": 1,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "FIZZY_DRACULA_TEETH.jpg"
         }
@@ -446,6 +486,7 @@
             "name": "STRAWBERRY CREAM SPINNING TOPS",
             "category": 3,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "STRAWBERRY_CREAM_SPINNING_TOPS.jpg"
         }
@@ -457,6 +498,7 @@
             "name": "MILK BOTTLES NON POWDERED",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "MILK_BOTTLES_NON_POWDERED.jpg"
         }
@@ -468,6 +510,7 @@
             "name": "RHUBARB & CUSTARD BITES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "RHUBARB_CUSTARD_BITES.jpg"
         }
@@ -479,6 +522,7 @@
             "name": "FIZZY PEACHES",
             "category": 1,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "FIZZY_PEACHES.jpg"
         }
@@ -490,6 +534,7 @@
             "name": "JELLY BONES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "JELLY_BONES.jpg"
         }
@@ -501,6 +546,7 @@
             "name": "GIANT COLA BOTTLES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "GIANT_COLA_BOTTLES.jpg"
         }
@@ -512,6 +558,7 @@
             "name": "JELLY BABIES",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "JELLY_BABIES.jpg"
         }
@@ -523,6 +570,7 @@
             "name": "WHITE CHOCOLATE SNOWIE STARS (V)",
             "category": 3,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "WHITE_CHOCOLATE_SNOWIE_STARS_V.jpg"
         }
@@ -534,6 +582,7 @@
             "name": "WHITE CHOCOLATE SNOWIES (V)",
             "category": 3,
             "is_vegetarian": "True",
+            "price": 1.00,
             "image_url": "",
             "image": "WHITE_CHOCOLATE_SNOWIES_V.jpg"
         }
@@ -545,6 +594,7 @@
             "name": "MINI TEETH FANGS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "MINI_TEETH_FANGS.jpg"
         }
@@ -556,6 +606,7 @@
             "name": "NORTH POLE MARSHMELLOWS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "NORTH_POLE_MARSHMALLOWS.jpg"
         }
@@ -567,6 +618,7 @@
             "name": "PINT POTS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "PINT_POTS.jpg"
         }
@@ -578,6 +630,7 @@
             "name": "JELLY BRAINS",
             "category": 2,
             "is_vegetarian": "False",
+            "price": 1.00,
             "image_url": "",
             "image": "JELLY_BRAINS.jpg"
         }
