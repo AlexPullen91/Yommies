@@ -15,7 +15,7 @@
                 {% if cart_items %}
                     <div class="table-responsive rounded">
                         <table class="table table-sm table-borderless">
-                            <thead class="font-weight-bold">
+                            <thead class="font-weight-bold text-purple">
                                 <tr>
                                     <th scope="col">ITEM</th>
                                     <th scope="col"></th>
@@ -25,7 +25,7 @@
                                 </tr>
                             </thead>
                             {% for item in cart_items %}
-                                <tr>
+                                <tr class="text-purple">
                                     <td class="p-3 w-25">
                                         <img src="{% static 'images/yommiesbag.jpg' %}" class="img-big border-radius-curve" alt="yommies sweet bag">
                                     </td>
@@ -55,15 +55,15 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info float-left"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                                        <a class="update-link text-purple float-left cursor-pointer"><small>Update</small></a>
+                                        <a class="remove-item text-danger float-right cursor-pointer" id="remove_{{ item.item_id }}"><small>Remove all</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p>£{{ item.item.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <tr>
+                            <tr class="text-purple">
                                 <td colspan="5" class="text-right">
                                     <h6 class="py-1">Cart Total:<strong> £{{ total|floatformat:2 }}</strong></h6>
                                     <h6 class="py-1">Delivery: <strong>£{{ delivery|floatformat:2 }}</strong></h6>
@@ -75,7 +75,7 @@
                             </tr>
                             <tr>
                                 <td colspan="5" class="text-right">
-                                    <a href="" class="btn btn-lg pink-btn mx-2">Return</a>
+                                    <a href="" class="btn btn-lg purple-btn mx-2">Return</a>
                                     <a href="" class="btn btn-lg pink-btn mx-2">Checkout</a>
                                 </td>
                             </tr>
