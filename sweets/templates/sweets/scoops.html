@@ -13,127 +13,145 @@
                 <img class="img-big border-radius-curve" src="{% static 'images/yommiesbag.jpg' %}" alt="Bag of yommies pick 'n' mix">
             </div>
             <div class="col-md-6">
-                <form>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop1" required>
-                                <option value="">Scoop 1</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
+                <form action="{% url 'add_to_cart' %}" method="POST">
+                    {% csrf_token %}
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_one" required>
+                                    <option value="">Scoop 1</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_two" required>
+                                    <option value="">Scoop 2</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
                             <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop2" required>
-                                <option value="">Scoop 2</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                        <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_three" required>
+                                    <option value="">Scoop 3</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop3" required>
-                                <option value="">Scoop 3</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                            <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_four" required>
+                                    <option value="">Scoop 4</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop4" required>
-                                <option value="">Scoop 4</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                            <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_five" required>
+                                    <option value="">Scoop 5</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop5" required>
-                                <option value="">Scoop 5</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                            <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_six" required>
+                                    <option value="">Scoop 6</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop6" required>
-                                <option value="">Scoop 6</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                            <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_seven" required>
+                                    <option value="">Scoop 7</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop7" required>
-                                <option value="">Scoop 7</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                            <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_eight" required>
+                                    <option value="">Scoop 8</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop8" required>
-                                <option value="">Scoop 8</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                            <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_nine" required>
+                                    <option value="">Scoop 9</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop9" required>
-                                <option value="">Scoop 9</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                            <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group">
+                            <div class="d-flex">
+                                <select class="form-control form-control-lg" name="scoop_ten" required>
+                                    <option value="">Scoop 10</option>
+                                    {% for scoop in scoops %}
+                                        <option value='{"name":"{{ scoop.name }}", "id":"{{ scoop.id }}", "price":"{{ scoop.price }}", "image":"{{ scoop.image }}"}'>{{ scoop.name }}</option>
+                                    {% endfor %}
+                                </select>
+                                <img src="" class="sweet-select-img m-auto rounded" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="d-flex">
-                            <select class="form-control form-control-lg" name="scoop10" required>
-                                <option value="">Scoop 10</option>
-                                {% for scoop in scoops %}
-                                    <option value="{{ scoop.name }}">{{ scoop.name }}</option>
-                                {% endfor %}
-                            </select>
-                            <img src="" class="sweet-select-img m-auto rounded" alt="">
+                        <div class="form-group py-3">
+                            <div class="input-group w-50">
+                                <div class="input-group-prepend">
+                                    <button class="decrement-qty btn text-purple" data-item_id="1" id="decrement-qty">
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                </div>
+                                <input class="d-inline form-control w-25 qty_input" type="number" name="quantity" value="1" min="1" max="99" data-item_id="2" id="id_qty">
+                                <div class="input-group-append">
+                                    <button class="increment-qty btn text-purple" data-item_id="3" id="increment-qty">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group py-3">
-                        <label for="quantity" class="d-inline">Quantity</label>
-                        <input class="d-inline form-control w-25" type="number" name="quantity" min="1" max="99" placeholder="1">
-                    </div>
-                    <button type="submit" class="btn purple-btn mr-sm-2 my-1 font-weight-bold">Add to cart</button>
-                    <button type="submit" class="btn pink-btn mx-sm-2 my-1 font-weight-bold">Checkout</button>
-                    <div class="d-inline mx-sm-2 pt-1"><i class="fab fa-cc-stripe stripe-icon"></i></div>
-                    <small class="text-center d-block pt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam amet fugiat nam, harum soluta eveniet voluptatibus omnis quas mollitia eaque blanditiis quasi! Nostrum repellat quia iusto tempora neque amet ex.</small>
+                        <button type="submit" class="btn purple-btn mr-sm-2 my-1 font-weight-bold">Add to cart</button>
+                        <button type="submit" class="btn pink-btn mx-sm-2 my-1 font-weight-bold">Checkout</button>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        <div class="d-inline mx-sm-2 pt-1"><i class="fab fa-cc-stripe stripe-icon"></i></div>
+                        <small class="text-center d-block pt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam amet fugiat nam, harum soluta eveniet voluptatibus omnis quas mollitia eaque blanditiis quasi! Nostrum repellat quia iusto tempora neque amet ex.</small>
                 </form>
             </div>
         </div>
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'sweets/includes/quantity_input_script.html' %}
 {% endblock %}

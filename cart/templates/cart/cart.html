@@ -30,11 +30,11 @@
                                         <img src="{% static 'images/yommiesbag.jpg' %}" class="img-big border-radius-curve" alt="yommies sweet bag">
                                     </td>
                                     <td class="py-3 text-left">
-                                        <p>{{ item.item.name }}</p>
-                                        <p class="text-lowercase">{{ item.item.description }}</p>
+                                        <p>{{ item.bag_choice.name }}</p>
+                                        <p class="text-lowercase">{{ item.bag_choice.description }}</p>
                                     </td>
                                     <td class="py-3">
-                                        <p>£{{ item.item.price }}</p>
+                                        <p>£{{ item.bag_choice.price }}</p>
                                     </td>
                                     <td class="py-3 w-25">
                                         <form class="update-form" method="POST" action="{% url 'adjust_cart' item.item_id %}">
@@ -59,7 +59,7 @@
                                         <a class="remove-item text-danger float-right cursor-pointer" id="remove_{{ item.item_id }}"><small>Remove all</small></a>
                                     </td>
                                     <td class="py-3">
-                                        <p>£{{ item.item.price | calc_subtotal:item.quantity }}</p>
+                                        <p>£{{ item.bag_choice.price | calc_subtotal:item.quantity }}</p>
                                     </td>
                                 </tr>
                             {% endfor %}

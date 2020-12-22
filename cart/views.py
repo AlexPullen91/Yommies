@@ -15,15 +15,15 @@ def add_to_cart(request):
     quantity = int(request.POST.get('quantity'))
     bag_choice = request.POST.get('bag_choice')
     bag_name = json.loads(bag_choice)['name']
-    item_id = json.loads(bag_choice)['id']
+    bag_item_id = json.loads(bag_choice)['id']
     redirect_url = request.POST.get('redirect_url')
     cart = request.session.get('cart', {})
 
-    if item_id in list(cart.keys()):
-        cart[item_id] += quantity
-        messages.success(request, f'{bag_name} quantity updated to {cart[item_id]}!')
+    if bag_item_id in list(cart.keys()):
+        cart[bag_item_id] += quantity
+        messages.success(request, f'{bag_name} quantity updated to {cart[bag_item_id]}!')
     else:
-        cart[item_id] = quantity
+        cart[bag_item_id] = quantity
         messages.success(request, f'{bag_name} have been added to your cart!')
 
     request.session['cart'] = cart
@@ -45,7 +45,6 @@ def adjust_cart(request, item_id):
         messages.success(request, f'{bag.name} removed from your cart.')
 
     request.session['cart'] = cart
-
     return redirect(reverse('view_cart'))
 
 
