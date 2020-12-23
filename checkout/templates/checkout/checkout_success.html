@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+{% block content %}
+
+    <div class="container-fluid container-padding mt-5 mt-lg-0">
+        <div class="row mb-5">
+            <div class="col text-center">  
+                <h1 class="pb-3">It's on the way!</h1>
+                <p>Here is your order information. A confirmation email will be sent to {{ order.email }}.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-7">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aut quidem provident dicta, sed corporis aliquid minima itaque ab sapiente nostrum tempora commodi, consectetur aspernatur amet eligendi maiores facilis.</p>
+                <div class="text-center">
+                    <button class="btn pink-btn mx-auto">Home</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
