@@ -1,3 +1,9 @@
+.order-confirmation-wrapper {
+    background-color: #fff8eb;
+    border-radius: 1rem;
+    border: 1px solid #4d4c7d;
+}
+
 .StripeElement,
 .stripe-style-input {
   box-sizing: border-box;
