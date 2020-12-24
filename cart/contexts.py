@@ -13,12 +13,14 @@ def cart_contents(request):
 
     for item_id, quantity in cart.items():
         bag_choice = get_object_or_404(Bags, pk=item_id)
+        scoops = bag_choice.scoops.all()
         total += quantity * bag_choice.price
         item_count += quantity
         cart_items.append({
             'item_id': item_id,
             'quantity': quantity,
             'bag_choice': bag_choice,
+            'scoops': scoops,
         })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:

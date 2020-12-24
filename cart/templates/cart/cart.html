@@ -32,6 +32,11 @@
                                     <td class="py-3 text-left">
                                         <p>{{ item.bag_choice.name }}</p>
                                         <p class="text-lowercase">{{ item.bag_choice.description }}</p>
+                                        {% if item.scoops %}
+                                            {% for scoop in item.scoops %}
+                                                <small class="text-lowercase py-0 my-0 d-block">{{ scoop }}</small>
+                                            {% endfor %}
+                                        {% endif %}
                                     </td>
                                     <td class="py-3">
                                         <p>£{{ item.bag_choice.price }}</p>
