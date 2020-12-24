@@ -68,5 +68,12 @@
         "fields": {
             "name": "HAPPY"
         }
+    },
+    {
+        "pk": 11,
+        "model": "sweets.category",
+        "fields": {
+            "name": "CUSTOM"
+        }
     }
 ]

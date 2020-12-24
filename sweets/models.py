@@ -30,7 +30,7 @@ class Bags(models.Model):
     name = models.CharField(max_length=254)
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
     description = models.TextField()
-    is_vegetarian = models.BooleanField()
+    is_vegetarian = models.BooleanField(null=True, blank=True)
     weight = models.CharField(max_length=254)
     price = models.DecimalField(max_digits=6, decimal_places=2)
     scoops = models.ManyToManyField(Scoops, blank=True, related_name="scoop")

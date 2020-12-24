@@ -13,7 +13,7 @@
                 <img class="img-big border-radius-curve" src="{% static 'images/yommiesbag.jpg' %}" alt="Bag of yommies pick 'n' mix">
             </div>
             <div class="col-md-6">
-                <form action="{% url 'add_to_cart' %}" method="POST">
+                <form action="{% url 'add_scoops_to_bag' %}" method="POST">
                     {% csrf_token %}
                         <div class="form-group">
                             <div class="d-flex">
@@ -140,7 +140,7 @@
                                 </div>
                             </div>
                         </div>
-                        <button type="submit" class="btn purple-btn mr-sm-2 my-1 font-weight-bold">Add to cart</button>
+                        <button type="submit" class="btn purple-btn mr-sm-2 my-1 font-weight-bold">Add Scoops</button>
                         <button type="submit" class="btn pink-btn mx-sm-2 my-1 font-weight-bold">Checkout</button>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         <div class="d-inline mx-sm-2 pt-1"><i class="fab fa-cc-stripe stripe-icon"></i></div>
