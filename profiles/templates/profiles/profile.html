@@ -12,5 +12,21 @@
                 <h1 class="text-center">Account</h1>
             </div>
         </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <h5 class="text-center pb-4">Default Delivery Information</h5>
+                <form method="POST" action="{% url 'profile'%}" id="profile-update-form">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="text-center pt-2">
+                        <button class="btn pink-btn">Update Info</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <h5 class="text-center pb-4">Your Order History</h5>
+                {{ orders }}
+            </div>
+        </div>
     </div>
 {% endblock %}

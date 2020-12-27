@@ -195,6 +195,12 @@ body {
     border-radius: 2rem;
 }
 
+/* Hide all labels on all auth templates except remember me box on login */
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+    display: none;
+}
+
 /*  
     Bootstrap navbar colors initiallly generated from TWBSColor https://work.smarchal.com/twbscolor/ 
     then further customized

@@ -11,7 +11,7 @@
             {{ message }}
           </div>
       </div>
-      {% if grand_total %}
+      {% if grand_total and not on_profile_page %}
         <p class="pt-4">Your cart: <strong>{{ item_count }} item(s)</strong></p>
         <div class="cart-notification-wrapper">
             {% for item in cart_items %}
