@@ -187,10 +187,17 @@
         </div>
         <div class="row">
             <div class="col-12">
-                <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aut quidem provident dicta, sed corporis aliquid minima itaque ab sapiente nostrum tempora commodi, consectetur aspernatur amet eligendi maiores facilis.</p>
-                <div class="text-center">
-                    <button class="btn pink-btn mx-auto">Home</button>
-                </div>
+                {% if from_profile %}
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aut quidem provident dicta, sed corporis aliquid minima itaque ab sapiente nostrum tempora commodi, consectetur aspernatur amet eligendi maiores facilis.</p>
+                    <div class="text-center">
+                        <a href="{% url 'profile' %}" class="btn pink-btn mx-auto">Go to profile</a>
+                    </div>
+                {% else %}
+                    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore esse aut quidem provident dicta, sed corporis aliquid minima itaque ab sapiente nostrum tempora commodi, consectetur aspernatur amet eligendi maiores facilis.</p>
+                    <div class="text-center">
+                        <a href="{% url 'home' %}" class="btn pink-btn mx-auto">Home</a>
+                    </div>
+                {% endif %}
             </div>
         </div>
     </div>

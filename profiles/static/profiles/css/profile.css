@@ -1,0 +1,4 @@
+.order-history {
+    max-height: 416px; /* Height of form and submit buttons */
+    overflow-y: auto;
+}
