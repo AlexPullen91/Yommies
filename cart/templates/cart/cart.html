@@ -33,6 +33,9 @@
                                         <p>{{ item.bag_choice.name }}</p>
                                         <p class="text-lowercase">{{ item.bag_choice.description }}</p>
                                         {% if item.scoops %}
+                                            {% if item.bag_choice.duplicate_scoops == True %}
+                                                <small class="d-block mb-2">This bag contains multiple scoops of:</small>
+                                            {% endif %}
                                             {% for scoop in item.scoops %}
                                                 <small class="text-lowercase py-0 my-0 d-block">{{ scoop }}</small>
                                             {% endfor %}
