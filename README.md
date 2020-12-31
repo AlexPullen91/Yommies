@@ -257,7 +257,7 @@ You can run the code in your chosen local Integrated Development Environment.
 
         git status
 
-### Remote
+### Remote
 
 To push code to a remote repository, follow steps below.
 
