@@ -46,20 +46,13 @@
                     <button type="submit" class="btn pink-btn mx-sm-2 my-1 font-weight-bold">Checkout</button>
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     <div class="d-inline mx-sm-2 pt-1"><i class="fab fa-cc-stripe stripe-icon"></i></div>
-                    <small class="text-center d-block pt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam amet fugiat nam, harum soluta eveniet voluptatibus omnis quas mollitia eaque blanditiis quasi! Nostrum repellat quia iusto tempora neque amet ex.</small>
+                    <small class="text-center d-block pt-5">Choose from the pre-selected range of pick 'n' mix.</small>
+                    <small class="text-center d-block">Choose an increased quantity if you're feeling greedy, add to cart and then head to checkout.</small>
                 </form>
             </div>
         </div>
     </div>
 
-
-    <!-- <script>
-        $("#bagChoice").change(function () {
-            let choice = $(this).find(':selected').data('item_id')
-            console.log(choice)
-        });
-        
-    </script> -->
 {% endblock %}
 
 {% block postloadjs %}
