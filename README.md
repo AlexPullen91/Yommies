@@ -322,11 +322,10 @@ To push the code to Heroku and deploy it dynamically, follow steps below.
 
 ## Credits
 
-* Favicon from [favicon generator](https://www.favicon.cc/?)
-
 ### Content
 
 * Kawaii star flat style icons from [flaticons](https://www.flaticon.com/packs/sweets-4?word=sweets&k=1606073810222)
+* Favicon from [favicon generator](https://www.favicon.cc/?)
 
 ### Code
 
