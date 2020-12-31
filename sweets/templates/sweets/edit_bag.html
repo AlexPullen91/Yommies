@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid container-padding mt-5 mt-lg-0">
+        <div class="row mb-5">
+            <div class="col-12 col-md-6 mx-auto">  
+                <h1 class="text-center">Management Area</h1>
+                <h3 class="text-center pt-3">Edit Bag</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6 mx-auto">
+                <form method="POST" action="{% url 'edit_bag' bag.id %}" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <div class="text-center pt-4">
+                        <button class="btn pink-btn">Update bag</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+

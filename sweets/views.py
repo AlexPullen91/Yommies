@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from .models import Scoops, Bags
 from .forms import BagsForm, ScoopsForm
@@ -35,7 +35,7 @@ def add_bag(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Bag has been successfully added.')
-            return redirect(reverse('add_bag'))
+            return redirect(reverse('view_all_sweets'))
         else:
             messages.error(request, 'Failed to add bag. Please make sure the form is valid.')
     else:
@@ -56,7 +56,7 @@ def add_scoop(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'The scoop has been successfully added.')
-            return redirect(reverse('add_scoop'))
+            return redirect(reverse('view_all_sweets'))
         else:
             messages.error(request, 'Failed to add scoop. Please make sure the form is valid.')
     else:
@@ -68,3 +68,81 @@ def add_scoop(request):
     }
 
     return render(request, template, context)
+
+
+def edit_bag(request, bag_id):
+    """ Edit a bag in the store """
+    bag = get_object_or_404(Bags, pk=bag_id)
+    if request.method == 'POST':
+        form = BagsForm(request.POST, request.FILES, instance=bag)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Bag updated successfully.')
+            return redirect('view_all_sweets')
+        else:
+            messages.error(request, 'Failed to update bag. Please make sure the form is valid.')
+    else:
+        form = BagsForm(instance=bag)
+        messages.info(request, f'You are editing {bag.name}')
+
+    template = 'sweets/edit_bag.html'
+    context = {
+        'form': form,
+        'bag': bag,
+    }
+
+    return render(request, template, context)
+
+
+def edit_scoop(request, scoop_id):
+    """ Edit a scoop in the store """
+    scoop = get_object_or_404(Scoops, pk=scoop_id)
+    if request.method == 'POST':
+        form = ScoopsForm(request.POST, request.FILES, instance=scoop)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Scoop updated successfully.')
+            return redirect('view_all_sweets')
+        else:
+            messages.error(request, 'Failed to update scoop. Please make sure the form is valid.')
+    else:
+        form = ScoopsForm(instance=scoop)
+        messages.info(request, f'You are editing {scoop.name}')
+
+    template = 'sweets/edit_scoop.html'
+    context = {
+        'form': form,
+        'scoop': scoop,
+    }
+
+    return render(request, template, context)
+
+
+def delete_bag(request, bag_id):
+    """ Delete bag from the store """
+    bag = get_object_or_404(Bags, pk=bag_id)
+    bag.delete()
+    messages.success(request, 'Bag deleted!')
+    return redirect(reverse('view_all_sweets'))
+
+
+def delete_scoop(request, scoop_id):
+    """ Delete scoop from the store """
+    scoop = get_object_or_404(Scoops, pk=scoop_id)
+    scoop.delete()
+    messages.success(request, 'Scoop deleted!')
+    return redirect(reverse('view_all_sweets'))
+
+
+def view_all_sweets(request):
+    """ A view for management to display all sweets in the store """
+
+    bags = Bags.objects.all()
+    scoops = Scoops.objects.all()
+
+    context = {
+        'scoops': scoops,
+        'bags': bags,
+    }
+
+    return render(request, 'sweets/all_sweets.html', context)

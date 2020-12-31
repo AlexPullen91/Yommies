@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid container-padding mt-5 mt-lg-0">
+        <div class="row mb-5">
+            <div class="col-12 col-md-6 mx-auto">  
+                <h1 class="text-center">Management Area</h1>
+                <h3 class="text-center pt-3">All bags and scoops</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 mx-auto">
+                <h4 class="pb-4">Bags</h4>
+                {% for bag in bags %}
+                    <div class="mb-3">
+                        <p class="mb-1">{{ bag }}</p>
+                        <a href="{% url 'edit_bag' bag.id %}" class="btn btn-sm pink-btn">Edit</a>
+                        <a href="{% url 'delete_bag' bag.id %}" class="btn btn-sm purple-btn">Delete</a>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="col-6 mx-auto">
+                <h4 class="pb-4">Scoops</h4>
+                {% for scoop in scoops %}
+                    <div class="mb-3">
+                        <p class="mb-1">{{ scoop }}</p>
+                        <a href="{% url 'edit_scoop' scoop.id %}" class="btn btn-sm pink-btn">Edit</a>
+                        <a href="{% url 'delete_scoop' scoop.id %}" class="btn btn-sm purple-btn">Delete</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
