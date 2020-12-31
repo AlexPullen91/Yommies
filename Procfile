@@ -1,0 +1,1 @@
+web: gunicorn yommies.wsgi:application
