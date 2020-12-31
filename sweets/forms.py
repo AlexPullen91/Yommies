@@ -1,5 +1,5 @@
 from django import forms
-from .models import Bags, Scoops, Category
+from .models import Bags, Scoops
 
 
 class BagsForm(forms.ModelForm):

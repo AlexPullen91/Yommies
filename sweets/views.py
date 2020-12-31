@@ -33,7 +33,9 @@ def all_bags(request):
 def add_bag(request):
     """ Add a bag to the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        messages.error(
+            request, 'This action is forbidden. Only store owners can do that.'
+            )
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -43,7 +45,10 @@ def add_bag(request):
             messages.success(request, 'Bag has been successfully added.')
             return redirect(reverse('view_all_sweets'))
         else:
-            messages.error(request, 'Failed to add bag. Please make sure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add bag. Please make sure the form is valid.'
+                )
     else:
         form = BagsForm()
 
@@ -59,7 +64,9 @@ def add_bag(request):
 def add_scoop(request):
     """ Add a new scoop to the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        messages.error(
+            request, 'This action is forbidden. Only store owners can do that.'
+            )
         return redirect(reverse('home'))
 
     if request.method == 'POST':
@@ -69,7 +76,10 @@ def add_scoop(request):
             messages.success(request, 'The scoop has been successfully added.')
             return redirect(reverse('view_all_sweets'))
         else:
-            messages.error(request, 'Failed to add scoop. Please make sure the form is valid.')
+            messages.error(
+                request,
+                'Failed to add scoop. Please make sure the form is valid.'
+                )
     else:
         form = ScoopsForm()
 
@@ -85,7 +95,9 @@ def add_scoop(request):
 def edit_bag(request, bag_id):
     """ Edit a bag in the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        messages.error(
+            request, 'This action is forbidden. Only store owners can do that.'
+            )
         return redirect(reverse('home'))
 
     bag = get_object_or_404(Bags, pk=bag_id)
@@ -96,7 +108,10 @@ def edit_bag(request, bag_id):
             messages.success(request, 'Bag updated successfully.')
             return redirect('view_all_sweets')
         else:
-            messages.error(request, 'Failed to update bag. Please make sure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update bag. Please make sure the form is valid.'
+                )
     else:
         form = BagsForm(instance=bag)
         messages.info(request, f'You are editing {bag.name}')
@@ -114,7 +129,9 @@ def edit_bag(request, bag_id):
 def edit_scoop(request, scoop_id):
     """ Edit a scoop in the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        messages.error(
+            request, 'This action is forbidden. Only store owners can do that.'
+            )
         return redirect(reverse('home'))
 
     scoop = get_object_or_404(Scoops, pk=scoop_id)
@@ -125,7 +142,10 @@ def edit_scoop(request, scoop_id):
             messages.success(request, 'Scoop updated successfully.')
             return redirect('view_all_sweets')
         else:
-            messages.error(request, 'Failed to update scoop. Please make sure the form is valid.')
+            messages.error(
+                request,
+                'Failed to update scoop. Please make sure the form is valid.'
+                )
     else:
         form = ScoopsForm(instance=scoop)
         messages.info(request, f'You are editing {scoop.name}')
@@ -143,7 +163,10 @@ def edit_scoop(request, scoop_id):
 def delete_bag(request, bag_id):
     """ Delete bag from the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        messages.error(
+            request,
+            'This action is forbidden. Only store owners can do that.'
+            )
         return redirect(reverse('home'))
 
     bag = get_object_or_404(Bags, pk=bag_id)
@@ -169,7 +192,9 @@ def delete_scoop(request, scoop_id):
 def view_all_sweets(request):
     """ A view for management to display all sweets in the store """
     if not request.user.is_superuser:
-        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        messages.error(
+            request, 'This action is forbidden. Only store owners can do that.'
+            )
         return redirect(reverse('home'))
 
     bags = Bags.objects.all()

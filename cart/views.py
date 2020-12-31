@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404
+)
 from django.contrib import messages
 from sweets.models import Bags
 from iteration_utilities import duplicates
@@ -50,7 +52,13 @@ def add_scoops_to_bag(request):
         scoop_ten_id
         ]
 
-    custom_mix = Bags(name='CUSTOM MIX', duplicate_scoops=False, description='Custom selection of pick n mix', weight='1KG', price=12.00)
+    custom_mix = Bags(
+            name='CUSTOM MIX',
+            duplicate_scoops=False,
+            description='Custom selection of pick n mix',
+            weight='1KG',
+            price=12.00
+        )
     custom_mix.save()
 
     dupe_scoops = list(duplicates(ten_scoops))
@@ -70,7 +78,9 @@ def add_scoops_to_bag(request):
 
     if bag_item_id in list(cart.keys()):
         cart[bag_item_id] += quantity
-        messages.success(request, f'{bag_name} quantity updated to {cart[bag_item_id]}!')
+        messages.success(
+            request, f'{bag_name} quantity updated to {cart[bag_item_id]}!'
+            )
     else:
         cart[bag_item_id] = quantity
         messages.success(request, f'{bag_name} have been added to your cart!')
@@ -91,7 +101,9 @@ def add_to_cart(request):
 
     if bag_item_id in list(cart.keys()):
         cart[bag_item_id] += quantity
-        messages.success(request, f'{bag_name} quantity updated to {cart[bag_item_id]}!')
+        messages.success(
+            request, f'{bag_name} quantity updated to {cart[bag_item_id]}!'
+            )
     else:
         cart[bag_item_id] = quantity
         messages.success(request, f'{bag_name} have been added to your cart!')
@@ -109,7 +121,9 @@ def adjust_cart(request, item_id):
 
     if quantity > 0:
         cart[item_id] = quantity
-        messages.success(request, f'{bag.name} quantity updated to {cart[item_id]} !')
+        messages.success(
+            request, f'{bag.name} quantity updated to {cart[item_id]} !'
+            )
     else:
         cart.pop(item_id)
         messages.success(request, f'{bag.name} removed from your cart.')
