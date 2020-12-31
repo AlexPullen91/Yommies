@@ -3,6 +3,7 @@
     https://stripe.com/docs/payments/accept-a-payment
     CSS from here: 
     https://stripe.com/docs/stripe-js
+    Adapted from boutique ado tutorial
 */
 
 var stripePublicKey = $('#id_stripe_public_key').text().slice(1, -1);

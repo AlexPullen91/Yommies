@@ -9,6 +9,8 @@ from django_countries.fields import CountryField
 from sweets.models import Bags
 from profiles.models import UserProfile
 
+# All code below taken from boutique ado tutorial
+
 
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)

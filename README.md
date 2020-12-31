@@ -137,6 +137,20 @@ CSS ran through [W3 validator](https://jigsaw.w3.org/css-validator/)
 Python ran through [PEP8 online check](http://pep8online.com/)
 * Everything good except for some long lines that break code if altered.
 
+
+Tested and working as intended on the following browsers:
+* Chrome
+* Safari
+* Firefox
+* Edge
+
+Some horizontal scrolling and layout tweaks needed on smaller screens but otherwise tested and working as intended on the following devices:
+* Macbook Pro
+* iOTA Notebook
+* iPhone 10
+* iPhone 11
+
+
 ## Manual Testing
 
 Yommies was tested manually. This involved step by step processes going through all the apps functionality and testing features such as form validation. Some examples are detailes below.
@@ -211,6 +225,7 @@ This test determines if the checkout feature works as intended
 Due to time constraints and other issues there were some things I've left to address at a later date.
 
 * Selecting a scoop should display an image of the scoop afterwards next to the select field - this leaves a single user story un-addressed.
+* Stickers model was intended to provide customers with free stickers featuring cartoon sweets after any purchase but didn't get round to implentning this properly.
 * Some responsive issues for smaller screens.
 
 ---
@@ -230,12 +245,15 @@ Due to time constraints and other issues there were some things I've left to add
 
 ### Content
 
+* Kawaii star flat style icons from [flaticons](https://www.flaticon.com/packs/sweets-4?word=sweets&k=1606073810222)
 
 ### Code
 
+Due to complexity and scale of this project some parts from the Code Institue Boutique Ado tutorial were used and customised to suit the needs of this project or used entirely to achieve functionality. These are outlined in the source code.
 
 ### Acknowledgements
 
+* My mentor [Simen Daehlin](https://github.com/Eventyret) for his help and advice on this project.
 
 ### Disclaimer
 

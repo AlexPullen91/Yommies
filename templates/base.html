@@ -3,7 +3,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    
+    <!-- Templating and layout structured in line with boutique ado tutorial -->
     {% block meta %}
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="utf-8">
@@ -33,7 +33,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Yommies {% block extra_title %}{% endblock %}</title>
+    <title>Yommies</title>
   </head>
   <body>
     <header class="fixed-top">
@@ -57,9 +57,6 @@
             {% endfor %}
         </div>
     {% endif %}
-
-    {% block page_header %}
-    {% endblock %}
 
     {% block content %}
     {% endblock %}

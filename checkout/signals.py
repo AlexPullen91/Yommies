@@ -3,6 +3,8 @@ from django.dispatch import receiver
 
 from .models import OrderLineItem
 
+# All code below taken from boutique ado tutorial
+
 
 @receiver(post_save, sender=OrderLineItem)
 def update_on_save(sender, instance, created, **kwargs):

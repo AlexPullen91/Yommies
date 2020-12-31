@@ -15,6 +15,8 @@ from cart.contexts import cart_contents
 import stripe
 import json
 
+# All code below taken from boutique ado tutorial
+
 
 @require_POST
 def cache_checkout_data(request):

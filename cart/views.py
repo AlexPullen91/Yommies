@@ -112,6 +112,7 @@ def add_to_cart(request):
     return redirect(redirect_url)
 
 
+# Following code adapted from boutique ado tutorial
 def adjust_cart(request, item_id):
     """ Adjust the quantity of the specified sweet bag """
 
@@ -132,6 +133,7 @@ def adjust_cart(request, item_id):
     return redirect(reverse('view_cart'))
 
 
+# Following code adapted from boutique ado tutorial
 def remove_from_cart(request, item_id):
     """ Remove item from the shopping cart """
 

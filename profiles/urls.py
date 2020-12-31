@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+
+# All code below taken from boutique ado tutorial
 # Indentation applied for flake8 to all paths for consistency
 urlpatterns = [
     path(

@@ -28,6 +28,8 @@ def all_bags(request):
 
     return render(request, 'sweets/bags.html', context)
 
+# Following functions adapted from boutique ado tutorial
+
 
 @login_required
 def add_bag(request):

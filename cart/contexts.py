@@ -4,7 +4,9 @@ from django.shortcuts import get_object_or_404
 from sweets.models import Bags
 
 
+# Following code adapted from boutique ado tutorial
 def cart_contents(request):
+    """ Provides access to the shopping cart across the app """
 
     cart_items = []
     total = 0
