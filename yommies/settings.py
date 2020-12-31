@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 from os import path
 if path.exists("env.py"):
@@ -106,7 +107,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend' # temporarily direct email confirmation to console
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'  # temporarily direct email confirmation to console
 
 ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
 ACCOUNT_EMAIL_REQUIRED = True
@@ -122,11 +123,17 @@ WSGI_APPLICATION = 'yommies.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
+
+POSTGRESDB = os.getenv('POSTGRESDB')
+
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.parse(POSTGRESDB)
 }
 
 
