@@ -235,9 +235,90 @@ Due to time constraints and other issues there were some things I've left to add
 
 ### Local Deployment
 
+This project is deployed live on [Heroku](https://yommies.herokuapp.com/).
 
-### Heroku Deployment
+You can run the code in your chosen local Integrated Development Environment.
 
+1. Open the Project Repository in Github.
+
+2. Go to green button at top right of the repository.
+
+3. If using Github Desktop, chose Open in Desktop.
+
+4. If you want to Clone the files into a Git repository, chose to copy the URL from the same menu (# 2.). Open your chosen Command Line Interface and use following command:
+
+        git clone https://github.com/AlexPullen91/Yommies.git
+
+5. To set up the files manually in a local repository, choose Download ZIP and remove files from ZIP folder. Place them into the chosen location. If desired, set up a Git repository in this folder in your CLI with the following command:
+
+        git init
+
+6. You can check the state of your repository after initialising it by using this command:
+
+        git status
+
+### Remote
+
+To push code to a remote repository, follow steps below.
+
+1. After using command 'git status' check that the console reads:
+
+        Nothing to commit
+        working tree clean
+
+
+2. Then link your remote repository. For Github, open your Github account and select Repositories. At top right of screen select New.
+
+3. Give your repository a name.
+
+4. You can now choose a few different ways to link local and remote repositories. The one we want here is "…or push an existing repository from the command line". Copy the code this option gives you and paste it into the command line. It should look something like this:
+
+        git remote add origin https://github.com/AlexPullen91/Yommies
+        git push -u origin master
+
+5. Now you can push any changes from command line with:
+
+        git push
+
+6. Check the status of of your local repository now (using 'git status') it should give you something like this:
+
+        On branch master
+        Your branch is up-to-date with 'origin/master'.
+        nothing to commit, working tree clean
+
+
+To deploy the code live with Github Pages, open the repository in your Github account and select 'Settings' at the top right of the page. Scroll down to Github Pages section. Click on 'None' button. Select the correct branch from menu. Now click on the URL link to visit deployed site.
+
+### Heroku
+
+To push the code to Heroku and deploy it dynamically, follow steps below.
+
+1. Following on from Local deployment step 6, type command 'git status' in the command line and check that the console reads:
+
+        Nothing to commit
+        working tree clean
+
+2. Create an App on Heroku. Log in to your previous Heroku account or set up a new one, select the New button on the top right of the screen, then select Create New App.
+
+3. Name your app and choose the regional server that best suits your location.
+
+4. Then, login to your Heroku account from the CLI using:
+
+        heroku login
+
+5. A browser window should open up where you can click to login to your account through your local IDE. If this does not open, select the link on the CLI with ctrl + c and open it manually.
+
+6. Link your existing Git repository to Heroku by adding Heroku as a remote repository:
+
+        heroku git:remote -a <project-name>
+
+7. From now on you can push your code from the CLI with:
+
+        git push heroku master
+
+8. Set the necessary Environment Variables. Select the Settings tab, and then select the Config Vars button. Enter the KEY - VALUE pairs for your config variables here (e.g. SECRET_KEY, IP, PORT etc.)
+
+9. Finally, select the Open App button the top right of the screen to see your deployed application.
 
 ## Credits
 
