@@ -139,8 +139,70 @@ Python ran through [PEP8 online check](http://pep8online.com/)
 
 ## Manual Testing
 
+Yommies was tested manually. This involved step by step processes going through all the apps functionality and testing features such as form validation. Some examples are detailes below.
+
+*Test case:* **User sign up process**
+
+This test determines if the user sign up process works as intended
+
+    1. User clicks register button under profile icon dropdown menu and is directed to sign up page.
+    2. Clicking sign up button at bottom of form alerts user to empty required input fields.
+    3. Entering an email in email field or user name in user name field that is taken fails the process and notifies the user.
+    4. Entering a unique email and name in email and username field with passwords that do not match alerts user to try again.
+    5. Entering a unique email and name in email and username field with matching passwords successfully creates a new user and directs them to landing page.
+
+    Verdict: Working as intended
+
+*Test case:* **User login process**
+
+This test determines if the user login process works as intended
+
+    1. User clicks signin button under profile icon dropdown menu and is directed to login page.
+    2. Clicking login button at bottom of form alerts user to empty required input fields.
+    3. Entering a name into username/email field and a password into password field that aren't in the database alerts user with an error message.
+    4. Entering a name into username/email field that is saved in the database and entering an incorrect password alerts user with an error message.
+    5. Entering a name into username field that is saved in the database along with entering the correct password redirects user to landing page.
+
+    Verdict: Working as intended
+
+*Test case:* **Adding scoops to bag**
+
+This test determines if the add scoops to bag works as intended 
+
+    1. User clicks build on landing page or navbar and is directed to scoops page.
+    2. Clicking add scoops or checkout alerts user to select an item from missing input fields.
+    3. Selecting 10 scoops of any order or quantity and then clicking add scoops notifies user they have been added to the cart.
+    4. Clicking go to checkout takes user to checkout page to complete purchase.
+    5. Click return takes user back to landing page.
+
+    Verdict: Working as intended - same process applied to add to bags.
+
+*Test case:* **Shopping Cart**
+
+This test determines if the shopping cart feature works as intended 
+
+    1. Once users have selected bags or scoops they are directed to their cart with all their selections.
+    2. Adjusting quantity with minus and plus arrows and then clicking update sets quantity to new value - grand total reflects this.
+    3. Clicking remove all removes item from the cart entirely - grand total reflects this.
+    4. Clicking checkout takes user to payment section.
+
+    Verdict: Working as intended
+
+*Test case:* **Checkout**
+
+This test determines if the checkout feature works as intended 
+
+    1. Clicking checkout from the cart page takes user to payment form.
+    2. Clicking complete order before filling in all required fields alerts user to do so.
+    3. Clicking complete order with required fields filled in but no card details alerts user it's incomplete.
+    4. Clicking complete order with required fields filled in and valid card details results in success message and user shown order information.
+    5. If user is registered and logged in then ticking the save info box saves their information for next time.
+    6. Clicking adjust bag takes user back to cart page.
+
+    Verdict: Working as intended
 
 ### Issues and Resolutions
+
 
 
 ---
