@@ -127,6 +127,15 @@ You can find my wireframes [here](https://github.com/AlexPullen91/yommies/tree/m
 
 ## Testing
 
+Testing for responsiveness and bugs throughout development was carried out with google chrome developer tools and the device toolbar to ensure compatibility on all screen sizes.
+
+HTML ran through [W3 validator](https://validator.w3.org/)
+
+CSS ran through [W3 validator](https://jigsaw.w3.org/css-validator/)
+* Everything good except some warnings related to webkits and bootstrap css
+
+Python ran through [PEP8 online check](http://pep8online.com/)
+* Everything good except for some long lines that break code if altered.
 
 ## Manual Testing
 
