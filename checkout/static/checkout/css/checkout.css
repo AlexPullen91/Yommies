@@ -1,3 +1,7 @@
+.wrap-text {
+    overflow-wrap: break-word;
+}
+
 .order-confirmation-wrapper {
     background-color: #fff8eb;
     border-radius: 1rem;
