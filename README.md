@@ -203,7 +203,15 @@ This test determines if the checkout feature works as intended
 
 ### Issues and Resolutions
 
+* I had trouble trying to send multiple values from the add scoops and add bags forms due to using single select fields.
+    * In order to send multiple values in a single select field I discovered a way to do this was by inserting them all in an object with key value pairs and parsing them out on the backend.
 
+#### Known issues
+
+Due to time constraints and other issues there were some things I've left to address at a later date.
+
+* Selecting a scoop should display an image of the scoop afterwards next to the select field - this leaves a single user story un-addressed.
+* Some responsive issues for smaller screens.
 
 ---
 
