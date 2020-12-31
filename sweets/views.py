@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from .models import Scoops, Bags
 from .forms import BagsForm, ScoopsForm
 
@@ -28,8 +29,13 @@ def all_bags(request):
     return render(request, 'sweets/bags.html', context)
 
 
+@login_required
 def add_bag(request):
     """ Add a bag to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = BagsForm(request.POST, request.FILES)
         if form.is_valid():
@@ -49,8 +55,13 @@ def add_bag(request):
     return render(request, template, context)
 
 
+@login_required
 def add_scoop(request):
     """ Add a new scoop to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ScoopsForm(request.POST, request.FILES)
         if form.is_valid():
@@ -70,8 +81,13 @@ def add_scoop(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_bag(request, bag_id):
     """ Edit a bag in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        return redirect(reverse('home'))
+
     bag = get_object_or_404(Bags, pk=bag_id)
     if request.method == 'POST':
         form = BagsForm(request.POST, request.FILES, instance=bag)
@@ -94,8 +110,13 @@ def edit_bag(request, bag_id):
     return render(request, template, context)
 
 
+@login_required
 def edit_scoop(request, scoop_id):
     """ Edit a scoop in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        return redirect(reverse('home'))
+
     scoop = get_object_or_404(Scoops, pk=scoop_id)
     if request.method == 'POST':
         form = ScoopsForm(request.POST, request.FILES, instance=scoop)
@@ -118,24 +139,38 @@ def edit_scoop(request, scoop_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_bag(request, bag_id):
     """ Delete bag from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        return redirect(reverse('home'))
+
     bag = get_object_or_404(Bags, pk=bag_id)
     bag.delete()
     messages.success(request, 'Bag deleted!')
     return redirect(reverse('view_all_sweets'))
 
 
+@login_required
 def delete_scoop(request, scoop_id):
     """ Delete scoop from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Forbidden! Only store owners can do that.')
+        return redirect(reverse('home'))
+
     scoop = get_object_or_404(Scoops, pk=scoop_id)
     scoop.delete()
     messages.success(request, 'Scoop deleted!')
     return redirect(reverse('view_all_sweets'))
 
 
+@login_required
 def view_all_sweets(request):
     """ A view for management to display all sweets in the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'This action is forbidden. Only store owners can do that.')
+        return redirect(reverse('home'))
 
     bags = Bags.objects.all()
     scoops = Scoops.objects.all()
