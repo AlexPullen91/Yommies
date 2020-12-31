@@ -140,8 +140,8 @@
                                 </div>
                             </div>
                         </div>
+                        <a href="{% url 'home' %}" class="btn pink-btn mx-sm-2 my-1 font-weight-bold">Return</a>
                         <button type="submit" class="btn purple-btn mr-sm-2 my-1 font-weight-bold">Add Scoops</button>
-                        <button type="submit" class="btn pink-btn mx-sm-2 my-1 font-weight-bold">Checkout</button>
                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         <div class="d-inline mx-sm-2 pt-1"><i class="fab fa-cc-stripe stripe-icon"></i></div>
                         <small class="text-center d-block pt-5">Choose 10 scoops of your favourite pick 'n' mix from the drop down menus, increase quantity if you're feeling particularly peckish, add to cart and then head to checkout!</small>
